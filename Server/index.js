@@ -38,3 +38,5 @@ if (process.env.NODE_ENV !== 'production') {
         console.log(`Server is up and running at port http://localhost:${PORT}`);
     });
 }
+
+module.exports = app;
