@@ -23,8 +23,8 @@ const onSubmit = async (data) => {
     try {
       const res = await axios.post(
         isSignup
-          ? "book-store-26of903cz-gaurav-0301s-projects.vercel.app/auth/signup"
-          : "book-store-26of903cz-gaurav-0301s-projects.vercel.app/auth/login",
+          ? "https://book-store-backend-one-wine.vercel.app/auth/signup"
+          : "https://book-store-backend-one-wine.vercel.app/auth/login",
         userInfo
       );
 

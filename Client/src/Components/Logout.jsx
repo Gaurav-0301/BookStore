@@ -6,7 +6,7 @@ const Logout = ({ setIsLoggedIn }) => {
 
 const handleClick = async () => {
   try {
-    await axios.post("book-store-26of903cz-gaurav-0301s-projects.vercel.app/auth/logout");
+    await axios.post("https://book-store-backend-one-wine.vercel.app/auth/logout");
     
     // Clear the data
     localStorage.removeItem("isLoggedIn");

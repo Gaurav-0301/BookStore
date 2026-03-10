@@ -12,7 +12,7 @@ const Course = () => {
   useEffect(()=>{
 const getBook= async()=>{
 try {
-  const res=await axios.get("book-store-26of903cz-gaurav-0301s-projects.vercel.app/books");
+  const res=await axios.get("https://book-store-backend-one-wine.vercel.app/books");
   console.log(res);
   setList(res.data);
 } catch (error) {
