@@ -27,6 +27,9 @@ app.use('/books', bookRoutes);
 app.use('/auth', authRoutes);
 app.use("/contact", contactRoute);
 
+app.get((req,res)=>{
+    res.send("Server is up")
+});
 // 2. Export the app for Vercel
 // This is critical for Vercel's serverless functions to work
 module.exports = app;
@@ -39,4 +42,3 @@ if (process.env.NODE_ENV !== 'production') {
     });
 }
 
-module.exports = app;
