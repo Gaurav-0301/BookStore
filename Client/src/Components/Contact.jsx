@@ -24,7 +24,7 @@ const Contact = () => {
     };
 
     // We pass the promise directly to toast.promise
-    const sendRequest = axios.post("http://localhost:2724/contact/email", contactData);
+    const sendRequest = axios.post("book-store-26of903cz-gaurav-0301s-projects.vercel.app/contact/email", contactData);
 
     toast.promise(
       sendRequest,
